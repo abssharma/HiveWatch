@@ -2,6 +2,7 @@ import React from 'react';
 import beeImage from '../assets/bee.png';
 import bee2Image from '../assets/bee2.png';
 import bee3Image from '../assets/bee3.png';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -18,14 +19,17 @@ const Home = () => {
                 <div className="bg-white p-6 shadow rounded-lg flex flex-col items-center justify-center">
                     <h2 className="font-semibold text-lg">Queen Bee Tracking</h2>
                     <p>Utilize cutting-edge technology to track the health and activity of the queen bee, ensuring the stability and growth of your hive.</p>
+                    <Link to="/queen-track" className="text-blue-500 hover:text-blue-700">Visit</Link>
                 </div>
                 <div className="bg-white p-6 shadow rounded-lg flex flex-col items-center justify-center">
                     <h2 className="font-semibold text-lg">Number of Bees in the Hive</h2>
                     <p>Get accurate counts and statistical analysis of your hive's population, helping you make informed decisions on bee colony management.</p>
+                    <Link to="/hive-number" className="text-blue-500 hover:text-blue-700">Visit</Link>
                 </div>
                 <div className="bg-white p-6 shadow rounded-lg flex flex-col items-center justify-center">
                     <h2 className="font-semibold text-lg">Bee Patterns</h2>
                     <p>Study the flight and foraging patterns of your bees with our pattern analysis tools to maximize their efficiency and health.</p>
+                    <Link to="/pattern" className="text-blue-500 hover:text-blue-700">Visit</Link>
                 </div>
 
                 <div className="text-center">
