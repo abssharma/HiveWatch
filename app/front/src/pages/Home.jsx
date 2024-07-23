@@ -1,4 +1,7 @@
 import React from 'react';
+import beeImage from '../assets/bee.png';
+import bee2Image from '../assets/bee2.png';
+import bee3Image from '../assets/bee3.png';
 
 const Home = () => {
     return (
@@ -9,6 +12,7 @@ const Home = () => {
                     Bee Boyz is an innovative platform dedicated to the real-time monitoring and management of bee colonies. Our mission is to support beekeepers by providing detailed, actionable insights to enhance the health and productivity of their hives.
                 </p>
             </header>
+
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="bg-white p-6 shadow rounded-lg flex flex-col items-center justify-center">
@@ -22,6 +26,16 @@ const Home = () => {
                 <div className="bg-white p-6 shadow rounded-lg flex flex-col items-center justify-center">
                     <h2 className="font-semibold text-lg">Bee Patterns</h2>
                     <p>Study the flight and foraging patterns of your bees with our pattern analysis tools to maximize their efficiency and health.</p>
+                </div>
+
+                <div className="text-center">
+                    <img src={bee3Image} alt="Bee Keeping" />
+                </div>
+                <div className="text-center">
+                    <img src={beeImage} alt="Bee Keeping" />
+                </div>
+                <div className="text-center">
+                    <img src={bee2Image} alt="Bee Keeping" />
                 </div>
             </div>
         </div>
