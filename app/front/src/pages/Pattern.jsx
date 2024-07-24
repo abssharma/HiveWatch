@@ -22,23 +22,34 @@ const Patterns = () => {
     };
 
     return (
-        <div style={{ padding: '20px', fontFamily: 'Arial' }}>
-            <h1>Random Bee Fact</h1>
-            {loading ? <p>Loading...</p> : <p>{beeFact || 'Click the button to get a fact!'}</p>}
-            <button onClick={fetchBeeFact} disabled={loading} style={{
-                padding: '10px 20px',
-                fontSize: '16px',
-                color: 'white',
-                backgroundColor: 'blue',
-                border: 'none',
-                borderRadius: '5px',
-                cursor: 'pointer',
-                marginTop: '10px'
-            }}>
-                Get Another Fact
-            </button>
-        </div>
-    );
+      <div style={{ padding: '20px', fontFamily: 'Arial', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div style={{
+              backgroundColor: '#fff',
+              boxShadow: '0 4px 8px rgba(0,0,0,0.1)', 
+              borderRadius: '10px', 
+              fontSize: '50px',
+              padding: '20px',
+              maxWidth: '400px',
+              width: '100%', 
+              textAlign: 'center',
+              marginBottom: '20px',
+              
+          }}>
+              {loading ? <p>Loading...</p> : <p>{beeFact || 'Click the button to get a fact!'}</p>}
+          </div>
+          <button onClick={fetchBeeFact} disabled={loading} style={{
+              padding: '10px 20px',
+              fontSize: '16px',
+              color: 'yellow',
+              backgroundColor: 'black',
+              border: 'none',
+              borderRadius: '5px',
+              cursor: 'pointer'
+          }}>
+              Get Another Fact
+          </button>
+      </div>
+  );
 };
 
 export default Patterns;
